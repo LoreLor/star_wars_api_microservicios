@@ -1,7 +1,7 @@
 const server= require('./src/server')
-const {PORT} = require('./src/config');
+const PORT = 8004
 
 
-server.listen(PORT || 8004, () => {
+server.listen(PORT, () => {
     console.log(`DATABASE listening on port: ${PORT} o 8004`);
 })
