@@ -5,6 +5,7 @@ const server = express();
 
 server.use(express.json());
 server.use(morgan('dev'));
+server.use(cors());
 
 server.use('/planets', require('./routes'));
 
